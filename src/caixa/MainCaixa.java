@@ -13,7 +13,7 @@ public class MainCaixa {
         double valorRecebido;
         double soma = 0;
 
-        List<Integer> credito = new ArrayList<>();
+        List<Double> credito = new ArrayList<>();
 
         String respostas = "";
         System.out.print("Digite o números de lançamentos que você deseja fazer: ");
@@ -24,9 +24,11 @@ public class MainCaixa {
         if (respostas.equalsIgnoreCase("credito")) {
             for (double contador = 0; contador < lancamentos; contador++) {
                 System.out.print("Digite o " + (contador + 1) + "º valor: ");
-                caixa.credito = input.nextDouble();
-
+                credito.add( input.nextDouble());
+                soma += (double) credito.get((int) contador);
+                caixa.credito = soma;
             }
+            System.out.println(caixa.credito());
 
         }
 
