@@ -2,16 +2,16 @@ package Jardinagem;
 
 public class Jardinagem {
     // Atributos da classe
-    String nomeJardim;
-    double quantidadeMetros;
-    int quantidaddeDePlantas;
-    double quantidadeMetrosGrama;
-    double quilosAdubo;
-    double valorAdubo;
-    double valorMetroGrama;
-    double valorCorteGrama;
+    String nomeJardim; //Atributos
+    double quantidadeMetros; //Atributos
+    int quantidaddeDePlantas; //Atributos
+    double quantidadeMetrosGrama; //Atributos
+    double quilosAdubo; //Atributos
+    double valorAdubo; //Atributos
+    double valorMetroGrama; //Atributos
+    double valorCorteGrama; //Atributos
 
-    public Jardinagem() {
+    public Jardinagem() { //Construtor
         this.nomeJardim = nomeJardim;
         this.quantidadeMetros = 0;
         this.quantidaddeDePlantas = quantidaddeDePlantas;
@@ -24,19 +24,20 @@ public class Jardinagem {
 
     }
 
-    public void usarAdubo() {
+    public void usarAdubo() { //Método vazio
         for (int contador = 0; contador < quantidadeMetrosGrama; contador += 2) {
             quilosAdubo += 0.1;
         }
 
 
     }
-    public double precoAdubo() {
+    public double precoAdubo() { // Método com retorno
         return quilosAdubo * valorAdubo;
 
     }
 
-    public double precoCorteGrama() {
+    public double precoCorteGrama() { //Método com retorno
+
         return valorCorteGrama = quantidadeMetrosGrama * valorMetroGrama;
     }
 

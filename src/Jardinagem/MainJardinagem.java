@@ -3,20 +3,21 @@ package Jardinagem;
 import java.util.Scanner;
 
 public class MainJardinagem {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // (comunicação com o usuário)
         Scanner input = new Scanner(System.in);
-        Jardinagem jardinagem = new Jardinagem();
-        jardinagem.nomeJardim = "Fazendinha";
-        jardinagem.quantidadeMetros = 30;
-        jardinagem.quantidaddeDePlantas = 10;
-        jardinagem.quantidadeMetrosGrama = 25;
-        jardinagem.valorAdubo = 16.83;
-        jardinagem.valorMetroGrama = 20;
-        jardinagem.valorCorteGrama = 50;
+        Jardinagem jardinagem = new Jardinagem(); // Objeto
+        jardinagem.nomeJardim = "Fazendinha"; // Argumento
+        jardinagem.quantidadeMetros = 30; // Argumento
+        jardinagem.quantidaddeDePlantas = 10; // Argumento
+        jardinagem.quantidadeMetrosGrama = 25; // Argumento
+        jardinagem.valorAdubo = 16.83; // Argumento
+        jardinagem.valorMetroGrama = 20; // Argumento
+        jardinagem.valorCorteGrama = 50; // Argumento
 
 
-        jardinagem.precoCorteGrama();
+        jardinagem.precoCorteGrama(); // Método
 
+        //Console de interação
         System.out.println("Nome do jardim: " + jardinagem.nomeJardim + "\nQuantidade de metros: " + jardinagem.quantidadeMetros +
                 "\nQuantidades de plantas no terreno: " + jardinagem.quantidaddeDePlantas + "\nQuantidade de metros de grama no terreno: " +
                 jardinagem.quantidadeMetrosGrama
